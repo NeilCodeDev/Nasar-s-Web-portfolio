@@ -1,0 +1,1176 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+
+/* -----making navbar----- */
+
+.side-menuBtn {
+    width: 20px;
+    height: 20px;
+    display: none;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+
+.burgerMenu {
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 21, 42, 1), rgba(12, 11, 69, 1));
+    height: 100vh;
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+}
+
+
+.burgerMenuActive {
+    transform: translateX(0);
+}
+
+
+.lineM {
+    border-radius: 2px;
+    transition: transform 0.2s, opacity 0.2s;
+
+}
+
+
+.line1 {
+    width: 20px;
+    height: 3px;
+    background-color: #14152A;
+}
+
+.line2 {
+    width: 13px;
+    height: 3px;
+    background-color: #14152A;
+}
+
+
+.line3 {
+    width: 20px;
+    height: 3px;
+    background-color: #14152A;
+}
+
+
+/*---ANIMATION BURGER BUTTON-------*/
+
+.burgerBtn-Active .line1 {
+    transform: translateY(5.5px) rotate(45deg);
+    background-color: rgb(255, 255, 255);
+}
+
+.burgerBtn-Active .line2 {
+    opacity: 0;
+}
+
+
+.burgerBtn-Active .line3 {
+    transform: translateY(-5.5px) rotate(-45deg);
+    background-color: rgb(255, 255, 255);
+}
+
+.burgerBtn-Active {
+    position: fixed;
+}
+
+
+
+header {
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+
+.navbar {
+    display: flex;
+    width: 1230px;
+    height: 40px;
+
+    justify-content: space-between;
+}
+
+
+.Name_Icon {
+    z-index: 5;
+    display: flex;
+    justify-self: center;
+}
+
+.Nicon {
+    font-weight: 900;
+    font-size: 24.68px;
+    color: white;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 41px;
+    height: 41px;
+    background-color: rgba(20, 21, 42, 1);
+    border-radius: 50%;
+}
+
+.Name {
+    display: flex;
+    margin-left: 13.22px;
+    align-self: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(20, 21, 42, 1);
+}
+
+
+
+
+
+
+.Nicon-Burger {
+    color: rgba(20, 21, 42, 1);
+    background-color: rgb(255, 255, 255);
+}
+
+.Name-Burger {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+.nav3El {
+    display: flex;
+    justify-self: center;
+    font-weight: 500;
+    font-size: 20px;
+    order: 1;
+}
+
+
+.liStartseite-Burger {
+    margin-left: 30px;
+}
+
+.liProjekte-Burger {
+    margin-right: 30px;
+}
+
+
+.nav3El-Burger {
+    margin-top: 115px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 120px;
+    flex-direction: column;
+    color: rgba(240, 195, 108, 1);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+}
+
+
+
+.iconsContainer-Burger {
+    display: flex;
+    justify-content: center;
+}
+
+
+.liStartseite {
+    margin-right: 30px;
+}
+
+.liProjekte {
+    margin-left: 30px;
+}
+
+.liEl {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+
+.liEl:hover {
+    background-color: rgba(239, 240, 245, 1);
+    border-radius: 30px;
+    cursor:pointer;
+    color: rgba(20, 21, 42, 1);
+}
+
+
+.alt-hover .liEl:hover {
+    background-color: rgba(48, 48, 81, 1);
+    color: rgba(240, 195, 108, 1);
+}
+
+
+.icon {
+    width: 28px;
+    height: 28px;
+    background-color: rgba(20, 21, 42, 1);
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    order: 2;
+}
+
+
+.whatsApp {
+    margin-right: 25px;
+
+    background-image: url(img/smediaIcons/whatsAppIcon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.instagram {
+    margin-right: 25px;
+
+    background-image: url(img/smediaIcons/instagramIcon.svg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.telegram {
+    background-image: url(img/smediaIcons/telegramIcon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*-------changing the color for the hambuergermenu of icons-----*/
+
+
+.whatsApp-hamburger {
+    background-image: url(img/footerIcons/whatsAppIcond.svg);
+}
+
+.instagram-hamburger {
+    background-image: url(img/footerIcons/instagramIcon.svg);
+}
+
+.telegram-hamburger {
+    background-image: url(img/footerIcons/telegramIcon.svg);
+}
+
+
+
+
+
+
+
+/* ------making startSeite------ */
+
+
+
+
+
+
+.startSeite {
+
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.textStart {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.startSeiteInfo {
+    margin-top: 160px;
+    width: 582px;
+    height: 325px;
+
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 290px 100px;
+    
+    margin-left: -550px;
+    position: relative;
+    left: 20px;
+}
+
+.bigText {
+    font-size: 62px;
+}
+
+
+
+.yellow-sign {
+    color: rgba(240, 195, 108, 1);
+}
+
+
+.smallText {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgba(79, 77, 99, 1);
+    font-weight: 400;
+}
+
+.imgHand {
+    width: 65px;
+    height: 64px;
+    position: relative;
+    top: 4.5px;
+}
+
+
+.btn {
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.uberBtn {
+    margin-right: 20px;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    border:none;
+    background-color: rgba(20, 21, 42, 1);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.projekteBtn {
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.btnContainer {
+    display: flex;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+
+.startSeitePhoto {
+    margin-top: 75px;
+    grid-row: 1;
+    grid-column: 2;
+    
+    position: relative;
+    bottom: 160px;
+    right: 40px;
+}
+
+
+
+/*---Scrollbar---*/
+
+::-webkit-scrollbar {
+    width: 9px;
+    background: linear-gradient(rgba(145, 147, 167, 1), rgba(20, 21, 42, 1));
+    height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #14152A;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+/* ------making uberseite------ */
+
+
+.uberSeite {
+    width: 100%;
+    height: 794px;
+    background-image: url(img/uberBackground.svg);
+    background-size: cover;
+    display: flex;
+    
+    justify-content: center;
+
+    position: relative;
+}
+
+.uberSeiteTextContainer {
+    width: auto;
+    margin-top: 236px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.UberMichText {
+    color: rgba(255, 255, 255, 1);
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.UberSeiteSmallText {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(198, 199, 214, 1);
+    text-align: center;
+    margin-bottom: 40px;
+    width: 1097px;
+}
+
+
+.uberInfoContainer {
+
+    width: 669px;
+    height: 252px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.uberInfo {
+    width: 471px;
+    height: 152px;
+
+    display: flex;
+}
+
+
+
+.uberSmallPic {
+    width: 152px;
+    height: 152px;
+    margin-right: 40px;
+
+}
+
+
+.uberSmallTextU {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.fontColor {
+    color: rgba(79, 77, 99, 1);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.casualF {
+    color: rgba(20, 21, 42, 1);
+    font-weight: 700;
+}
+
+
+.scrollCircle {
+    display: flex;
+    width: 50px;
+    height: 96px;
+    background-image: url(img/smediaIcons/circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    position: absolute;
+    top: 20px;
+    bottom: 500px;
+    
+}
+
+
+
+
+/*----------Projekseite---------*/
+
+.projektenSeite {
+    height: 784px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.projektContainer {
+    margin-top: 100px;
+    width: 1097px;
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.topTextProjekten {
+    text-align: center;
+}
+
+
+.projektTitle {
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+
+.smallTextProjekte {
+    color: rgba(79, 77, 99, 1);
+    margin-bottom: 40px;
+}
+
+
+.projekt1 {
+    width: 538px;
+    height: 469px;
+
+    text-align: center;
+}
+
+
+.projekt2 {
+    width: 538px;
+    height: 469px;
+
+    text-align: center;
+}
+
+
+.projektsCont {
+    width: 1097px;
+    height: 469px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 21px;
+
+
+}
+
+.projectTitles {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+.imgOverflow {
+    overflow: hidden;
+    border-radius: 15px;
+    height: 252px;
+    margin-bottom: 25px;
+}
+
+.projetsImg {
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    object-fit: cover;
+    transform-origin: center;
+    transition: transform 0.2s cubic-bezier(.47, 0, .745, .715);
+}
+
+.projetsImg:hover {
+    transform: scale(1.10);
+}
+
+
+
+.smalTextUnderProj {
+    font-weight: 400;
+    color: rgba(79, 77, 99, 1);
+    font-size: 18px;
+}
+
+
+
+
+/*------------FOOTER-------------*/
+
+footer {
+    height: 367px;
+    width: 100%;
+    background-image: url(img/Footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.footContainer {
+    width: 317px;
+    height: 126px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerIcon_name {
+    display: flex;
+
+
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.footerIcon {
+    width: 41px;
+    height: 41px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+
+
+.footerName {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+.footerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(20, 21, 42, 1);
+    font-weight: 900;
+    font-size: 24.68px;
+
+    margin-right: 13.22px;
+}
+
+.lowerTextFooter {
+    text-align: center;
+    width: 317px;
+    height: 23px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(129, 130, 148, 1);
+
+    margin-bottom: 15px;
+}
+
+.footerIcons {
+    width: 133px;
+    height: 28px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footerSicon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+.footerSicon:hover {
+    transform: scale(1.15);
+}
+
+
+
+.footerWhatsApp {
+    background-image: url(img/footerIcons/whatsAppIcond.svg);
+}
+
+.footerInstagram {
+    background-image: url(img/footerIcons/instagramIcon.svg);
+}
+
+.footerTelegram {
+    background-image: url(img/footerIcons/telegramIcon.svg);
+}
+
+
+
+
+
+
+/*--------------QUERIES TABLET-------------*/
+
+
+@media screen and (max-width: 1320px) {
+
+
+    
+    
+    .navbar {
+        width: 889px;
+    }
+
+    .startSeiteInfo {
+        position: relative;
+        left: 130px;
+    }
+
+
+    .textStart {
+        z-index: 1;
+    }
+
+    .startSeitePhoto {
+        margin-top: 90px;
+        position: relative;
+        right: 190px;
+
+    }
+
+    .mainPhoto {
+        width: 575px;
+        height: auto;
+    }
+
+
+
+    .UberSeiteSmallText {
+        width: 889px;
+    }
+
+
+
+    .projektContainer {
+        margin-top: 100px;
+        width: 887px;
+        height: 624px;
+    }
+
+
+    
+    .projektsCont {
+
+        grid-template-columns: 1fr;
+        place-items: center;
+
+    }
+
+    .smallTextProjekte {
+        margin-bottom: 60px;
+    }
+
+
+    .projekt1 {
+        width: 887px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgOverflow {
+        width: 538px;
+    }
+
+    .projekt2 {
+        margin-top: 50px;
+        width: 887px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .projektenSeite {
+        height: 1187px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    
+    }
+    
+}
+
+
+@media screen and (max-width: 960px) {
+
+    /*-----navbar-----------*/
+
+    .nav3El {
+        display: none;
+    }
+
+    .iconsContainer {
+        display: none;
+    }
+
+
+    header {
+        width: 100%;
+        height: 67px;
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: end;
+
+    }
+
+    .navbar {
+        display: flex;
+        height: 34px;
+
+        margin-left: 25px;
+        margin-right: 25px;
+        align-items: center;
+        
+    }
+
+
+
+    .Nicon {
+        font-size: 21px;
+        
+        width: 35px;
+        height: 35px;
+    }
+    
+    .Name {
+        margin-left: 11.26px;
+        font-weight: 500;
+        font-size: 20.45px;
+        line-height: 24px;
+    }
+
+    .side-menuBtn {
+        display: flex;
+    }
+
+    .Name_Icon {
+        display: flex;
+        justify-self: center;
+        margin-left: auto;
+    }
+
+
+    /*------startseite---------*/
+
+    .mainPhoto {
+        width: 340px;
+        height: auto;
+    }
+
+    .textStart {
+        text-align: center;
+        width: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15px;
+
+    }
+
+    .bigText {
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    .smallText{
+        font-size: 18px;
+        text-align: center;
+
+
+        width: 326px;
+    }
+
+
+
+    .imgHand {
+        width: 51px;
+        height: 50px;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .startSeite {
+        width: 100%;
+        height: 862px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .startSeiteInfo {
+        margin-top: 55px;
+        margin-right: -305px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 3fr 1fr;
+    }
+    
+
+
+
+    .btnContainer {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+
+        grid-row: 3;
+        grid-column: 1;
+        z-index: 2;
+    }
+
+
+    .uberBtn {
+        margin-bottom: 20px;
+    }
+
+    .startSeitePhoto {
+        margin-top: 95px;
+        grid-row: 2;
+        grid-column: 1;
+        
+        position: relative;
+        bottom: 60px;
+        left: 120px;
+    }
+
+
+    .scrollCircle {
+        top: -33px;
+    }
+
+
+    /*----------------uberseite-------------------*/
+
+
+
+    .uberSeite {
+        height: 924px;
+    }
+
+
+    .uberSeiteTextContainer {
+        margin-top: 130px;
+    }
+
+    .UberSeiteSmallText {
+        width: 327px;
+
+    }
+
+    .uberInfoContainer {
+        width: 327px;
+        height: 438px;
+    }
+
+    .uberInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .uberSmallPic {
+        margin-top: -50px;
+        order: 1;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+
+    .uberSmallTextU {
+        text-align: center;
+        width: 227px;
+        order: 2;
+    }
+
+
+    .casualF {
+        margin-bottom: 20px;
+    }
+    
+    .uberSmallTextU {
+        justify-content: space-between;
+    }
+
+
+    .UberMichText {
+        font-size: 30px;
+    }
+
+
+    .UberSeiteSmallText {
+        font-size: 16px;
+    }
+
+
+    /*-------------projektenSeite------------*/
+
+
+    .projektenSeite {
+        height: 1100px;
+    }
+
+    .projektContainer {
+        margin-top: 60px;
+    }
+
+
+    .smallTextProjekte {
+        width: 325px;
+    }
+
+
+    .projetsImg {
+        width: 327px;
+    }
+
+    .projekt1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projekt2 {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgOverflow {
+        width: 327px;
+        height: 153px;
+    }
+
+    .smalTextUnderProj {
+        
+        width: 327px;
+    }
+
+    .projektTitle {
+        font-size: 30px;
+    }
+
+
+    .smalTextUnderProj {
+        font-size: 16px;
+    }
+
+    .projectTitles {
+        font-size: 22px;
+    }
+
+    /*-----------------FOOTER----------------*/
+
+    .footContainer {
+        margin-bottom: 30px;
+    }
+    
+    .footerName {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        font-size: 20.4px;
+
+    }
+    
+    
+    .footerIcon {
+        width: 34.85px;
+        height: 34.85px;
+
+    }
+    
+    .lowerTextFooter {
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+
+
+}
+
+
+
+
+
